@@ -11,7 +11,7 @@ interface Props {
 function ListGroup({ items, itemDelete, itemCheck }: Props) {
 
     //items = [];
-    const handleClick = (event: MouseEvent) => console.log(event);
+
     return (
         <>
             <ul className="list-group  ">
