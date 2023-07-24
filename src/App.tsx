@@ -1,9 +1,8 @@
-import { useState, useRef, MutableRefObject } from 'react';
+import { useState } from 'react';
 
 import InputForm from './components/InputForm';
 import Alert from './components/Alert';
 import ListGroup from './components/ListGroup';
-
 
 import './App.css' ;
 
@@ -11,7 +10,7 @@ import './App.css' ;
 function App() {
   const [inputItems, setinputItems] = useState([{ title: '' , date: '', did: false }])
   const [alertVisable, setAlertVisable] = useState(false);
-  
+
   const handleSubmit = (inputTitle: string, inputDate: string) => {
     (inputTitle && inputDate ?
       setinputItems([...inputItems, { title: inputTitle, date: inputDate, did:false }]) : setAlertVisable(true)
