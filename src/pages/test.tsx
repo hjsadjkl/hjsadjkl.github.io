@@ -8,7 +8,7 @@ const skills = [
     { name: 'Python', description: 'Deep Learning深度學習, spider爬蟲' },
   ];
 
-export default function Index() {
+export default function Testpage() {
     const [hoveredSkill, setHoveredSkill] = useState<string | null>(null);
 
     const showTooltip = (skill: string) => {
