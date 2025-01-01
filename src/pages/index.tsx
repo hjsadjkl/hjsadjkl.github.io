@@ -1,6 +1,6 @@
 import Head from "next/head"
 import Image from "next/image";
-import pic from "C:/Users/user/Desktop/github_page/my-app/src/app/picture/profile.jpg"
+import pic from "../app/picture/profile.jpg"
 import {ParagraphList, Paragraph} from '../components/article';
 export default function Index() {
 
