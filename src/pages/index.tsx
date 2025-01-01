@@ -1,6 +1,7 @@
 import Head from "next/head"
 import Image from "next/image";
 import pic from "../app/picture/profile.jpg"
+import githubpic from "../app/picture/github.jpg"
 import {ParagraphList, Paragraph} from '../components/article';
 export default function Index() {
 
@@ -10,6 +11,13 @@ export default function Index() {
           <Head>
               <title>ilica</title>       
           </Head>    
+          <Image
+            src={githubpic}
+            alt="Hidden Profile Picture"
+            width={128}
+            height={128}
+            className="hidden"
+          />
           {/* 固定在左側的圖片 */}
           <div
             className="fixed top-1/2 left-10 transform -translate-y-1/2 p-4 shadow-lg bg-white rounded-lg flex flex-col items-center"
